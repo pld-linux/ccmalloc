@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		Development/Debuggers
 Source0:	http://www.inf.ethz.ch/personal/biere/projects/ccmalloc/%{name}-%{fnversion}.tar.gz
+# Source0-md5:	ad0fb2eb9432de07f7d8de22c286a3ad
 URL:		http://www.inf.ethz.ch/personal/biere/projects/ccmalloc/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
