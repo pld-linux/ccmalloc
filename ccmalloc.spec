@@ -3,7 +3,7 @@ Summary(pl):	Biblioteka do debuggowania i profilowania obs³ugi pamiêci w C/C++
 Name:		ccmalloc
 Version:	0.3.4
 %define fnversion %(echo %{version} | tr . -)
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Debuggers
 Group(de):	Entwicklung/Debugger
@@ -36,10 +36,11 @@ Wy¶wietla tak¿e statystyki alokacji i dealokacji.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d ${RPM_BUILD_ROOT}%{_libdir}
+install -d ${RPM_BUILD_ROOT}{%{_libdir},%{_bindir}}
 
 install lib/libccmalloc.a ${RPM_BUILD_ROOT}%{_libdir}
-install obj/ccmalloc*.o	  ${RPM_BUILD_ROOT}%{_libdir}
+install obj/ccmalloc*.o   ${RPM_BUILD_ROOT}%{_libdir}
+install bin/ccmalloc	  ${RPM_BUILD_ROOT}%{_bindir}	
 
 gzip -9nf BUGS FEATURES NEWS README TODO USAGE
 
@@ -48,6 +49,6 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(644,root,root,755)
-%{_libdir}/*
-%doc {BUGS,FEATURES,NEWS,README,TODO,USAGE}.gz
-%doc ccmalloc.cfg
+%doc *.gz ccmalloc.cfg
+%attr(755,root,root) %{_libdir}/*
+%attr(755,root,root) %{_bindir}/*
