@@ -38,7 +38,7 @@ install -d ${RPM_BUILD_ROOT}{%{_libdir},%{_bindir}}
 
 install lib/libccmalloc.a ${RPM_BUILD_ROOT}%{_libdir}
 install obj/ccmalloc*.o   ${RPM_BUILD_ROOT}%{_libdir}
-install bin/ccmalloc	  ${RPM_BUILD_ROOT}%{_bindir}	
+install bin/ccmalloc	  ${RPM_BUILD_ROOT}%{_bindir}
 
 gzip -9nf BUGS FEATURES NEWS README TODO USAGE
 
