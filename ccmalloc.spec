@@ -22,7 +22,7 @@ It also displays statistics on allocation and deallocation.
 
 %build
 ./configure --prefix=%{_prefix}
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
