@@ -37,9 +37,9 @@ Wy¶wietla tak¿e statystyki alokacji i dealokacji.
 rm -rf $RPM_BUILD_ROOT
 install -d ${RPM_BUILD_ROOT}{%{_libdir},%{_bindir}}
 
-install lib/libccmalloc.a ${RPM_BUILD_ROOT}%{_libdir}
-install obj/ccmalloc*.o   ${RPM_BUILD_ROOT}%{_libdir}
-install bin/ccmalloc	  ${RPM_BUILD_ROOT}%{_bindir}
+install lib/libccmalloc.a	${RPM_BUILD_ROOT}%{_libdir}
+install obj/ccmalloc*.o		${RPM_BUILD_ROOT}%{_libdir}
+install bin/ccmalloc		${RPM_BUILD_ROOT}%{_bindir}
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
