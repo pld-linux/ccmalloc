@@ -6,8 +6,6 @@ Version:	0.3.4
 Release:	2
 License:	GPL
 Group:		Development/Debuggers
-Group(de):	Entwicklung/Debugger
-Group(pl):	Programowanie/Odpluskwiacze
 Source0:	http://www.inf.ethz.ch/personal/biere/projects/ccmalloc/%{name}-%{fnversion}.tar.gz
 URL:		http://www.inf.ethz.ch/personal/biere/projects/ccmalloc/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
