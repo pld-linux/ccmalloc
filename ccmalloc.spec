@@ -27,15 +27,17 @@ It also displays statistics on allocation and deallocation.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d ${RPM_BUILD_ROOT}%{_libdir}
+
 install lib/libccmalloc.a ${RPM_BUILD_ROOT}%{_libdir}
 install obj/ccmalloc.o	  ${RPM_BUILD_ROOT}%{_libdir}
-gzip -9nf BUGS FEATURES INSTALL NEWS README TODO USAGE
+
+gzip -9nf BUGS FEATURES NEWS README TODO USAGE
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(644,root,root,755)
-%{_libdir}
+%{_libdir}/*
 %doc {BUGS,FEATURES,INSTALL,NEWS,README,TODO,USAGE}.gz
 %doc ccmalloc.cfg
