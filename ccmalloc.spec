@@ -40,13 +40,11 @@ install lib/libccmalloc.a ${RPM_BUILD_ROOT}%{_libdir}
 install obj/ccmalloc*.o   ${RPM_BUILD_ROOT}%{_libdir}
 install bin/ccmalloc	  ${RPM_BUILD_ROOT}%{_bindir}
 
-gzip -9nf BUGS FEATURES NEWS README TODO USAGE
-
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz ccmalloc.cfg
+%doc BUGS FEATURES NEWS README TODO USAGE ccmalloc.cfg
 %attr(755,root,root) %{_libdir}/*
 %attr(755,root,root) %{_bindir}/*
