@@ -1,5 +1,5 @@
 Summary:	C/C++ memory debugging and profiling library
-Summary(pl):	Biblioteka do debuggowania i profilowania obs³ugi pamiêci w C/C++
+Summary(pl.UTF-8):   Biblioteka do debuggowania i profilowania obsÅ‚ugi pamiÄ™ci w C/C++
 Name:		ccmalloc
 Version:	0.3.4
 %define fnversion %(echo %{version} | tr . -)
@@ -18,12 +18,12 @@ without source recompile.
 
 It also displays statistics on allocation and deallocation.
 
-%description -l pl
-ccmalloc wykrywa wycieki pamiêci, wielokrotne zwalnianie, zapisy
-poni¿ej i powy¿ej zaalokowanego obszaru oraz dostêp do zwolnionego
-obszaru pamiêci w programach w C i C++ - bez rekompilacji.
+%description -l pl.UTF-8
+ccmalloc wykrywa wycieki pamiÄ™ci, wielokrotne zwalnianie, zapisy
+poniÅ¼ej i powyÅ¼ej zaalokowanego obszaru oraz dostÄ™p do zwolnionego
+obszaru pamiÄ™ci w programach w C i C++ - bez rekompilacji.
 
-Wy¶wietla tak¿e statystyki alokacji i dealokacji.
+WyÅ›wietla takÅ¼e statystyki alokacji i dealokacji.
 
 %prep
 %setup -q -n %{name}-%{fnversion}
