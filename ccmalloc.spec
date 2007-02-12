@@ -1,5 +1,5 @@
 Summary:	C/C++ memory debugging and profiling library
-Summary(pl.UTF-8):   Biblioteka do debuggowania i profilowania obsługi pamięci w C/C++
+Summary(pl.UTF-8):	Biblioteka do debuggowania i profilowania obsługi pamięci w C/C++
 Name:		ccmalloc
 Version:	0.3.4
 %define fnversion %(echo %{version} | tr . -)
